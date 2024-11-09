@@ -61,7 +61,7 @@ Packages and Libraries
 ## 4.	Frontend Structure and Code
 Each page is structured as an HTML file and styled with CSS.
 ```html
--	** Homepage (The Peoples Hospital.html) **
+-	**Homepage (The Peoples Hospital.html)**
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -615,8 +615,8 @@ Hospital Rooms
 </body>
 </html>
 ```
-## - ** Services (incudes Outpatient, Consultant Clinics, Cardiac Programs and Telemedicine) **
-** a.	Inpatient (healthservices.html)**
+## - **Services (incudes Outpatient, Consultant Clinics, Cardiac Programs and Telemedicine)**
+**a.	Inpatient (healthservices.html)**
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -921,7 +921,7 @@ window.onload = slideShow;
 </body>
 </html>
 ```
-** b.	Outpatient (outpatient.html) **
+**b.	Outpatient (outpatient.html)**
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -1347,7 +1347,7 @@ header{
 </body>
 </html>
 ```
-** c.	Consultant clinics (Clinic.html) **
+**c.	Consultant clinics (Clinic.html)**
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -1652,7 +1652,7 @@ h3{
 </body>
 </html>
 ```
-** d.	Cardiac Programs (cardiac.html) **
+**d.	Cardiac Programs (cardiac.html)**
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -2050,7 +2050,7 @@ window.onload = slideShow;
 </body>
 </html>
 ```
-** e.	Telemedcine (tele.html) **
+**e. Telemedcine (tele.html)**
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -2357,7 +2357,7 @@ h3{
 </body>
 </html>
 ```
-## - ** III.	Gallery (includes photos, videos and audio incorporated) (gal1.html) **
+## - **III.	Gallery (includes photos, videos and audio incorporated) (gal1.html)**
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -2822,7 +2822,7 @@ h3{
 </body>
 </html>
 ```
-## - ** IV.	Contact Us (contactus.html) **
+## - **IV.	Contact Us (contactus.html)**
 ``` html
 <!DOCTYPE html>
 <html lang="en">
@@ -3227,7 +3227,7 @@ h3{
 </body>
 </html>
 ```
-## - ** Login (login.html) **
+## - **Login (login.html)**
 ```html
 <!DOCTYPE html>
 <html>
@@ -3466,7 +3466,7 @@ h3{
 </body>
 </html>
 ```
-## - **	Sign-Up (signup.html) **
+## - **Sign-Up (signup.html)**
 ```html
 <!DOCTYPE html>
 <html>
@@ -3717,7 +3717,7 @@ h3{
 </body>
 </html>
 ```
-## - ** Admin Login (Admin.html)
+## - **Admin Login (Admin.html)**
 ```html
 <!DOCTYPE html>
 <html>
@@ -3957,7 +3957,7 @@ h3{
 </body>
 </html>
 ```
-## ** CSS (health.css) **
+## **CSS (health.css)**
 ```css
 #body{
     background-color: gray;
@@ -4032,7 +4032,7 @@ h3{
     text-align: center;
 }
 ```
-## ** JAVASCRIPT (script.js) **
+## **JAVASCRIPT (script.js)**
 ```js
 // Listening when our DOM content is loaded
 document.addEventListener('DOMContentLoaded', () =>{
@@ -4503,6 +4503,6 @@ node server.js
 ```
 
 d.	Using your browser, access the application by typing the following on your url section.
-** http://localhost:3100 **
+**http://localhost:3100**
 
 This documentation has provided a complete guide to understanding and setting up the The hospital system on a local machine. Let me know if you need more details on specific sections.
