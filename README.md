@@ -2,8 +2,8 @@
 ### NOTE: This is the documentation of The Peoples Hospital management system and how to incorporate it into your desktop and run it.
 Here's a step-by-step guide on how to get this project from GitHub and run it on your desktop:
 ### Prerequisites:
-**Git:** A version control system to clone the repository. You can download it from the official Git website.   
-**Required Tools:** Ensure you have the necessary tools (npm, Node.js, mysql, vs code.) to run the project, depending on its programming language.
+**- Git:** A version control system to clone the repository. You can download it from the official Git website.   
+**- Required Tools:** Ensure you have the necessary tools (npm, Node.js, mysql, vs code.) to run the project, depending on its programming language.
 ### Steps:
 **Find the Repository:**
 - Go to GitHub and search for the project you want.
