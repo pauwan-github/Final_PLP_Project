@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <div id="bar">
+        <ul Alink="gold" Vlink="white" link="blue">
+            <li><a href="The Peoples Hospital.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta" id="active">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="#" id="active">Inpatient</a></strong>
+                    <strong><a href="outpatient.html">Outpatient</a></strong>
+                    <strong><a href="clinic.html">Consultant Clinics</a></strong>
+                    <strong><a href="cardiac.html">Cardiac Programs</a></strong>
+                    <strong><a href="tele.html">Telemedicine</a></strong>
+                </div>
+            </div></a></li>
+            <li><a href="gal1.html">Gallery</a></li>
+            <li><a href="contactus.html">Contacts</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="Admin.html">Admin</a></li>
+        </ul>
+    </div>
+    <style>
+        #bar{
+    margin-top: 10px;
+    background-color: skyblue;
+    text-align: center;
+    padding-left: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#bar ul li{
+    display: inline; 
+}
+#bar ul li a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 500ms;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+#active{
+    background-color: red;
+    color: yellow;
+    border-radius: 5px;
+}
+#bar ul li a:hover{
+    background-color: blue;
+    color: white;
+    transition: 500ms;
+    border-radius: 10px;
+   
+}
+        #inpatient{
+            font-size: 25px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #feeds{
+            background-color: green;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 35px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 10px;
+        }
+        #pic{
+            border-radius: 10px;
+            padding-left: 200px;
+            padding-top: 50px;
+        }
+        header{
+            background-color:cyan;
+            color: red;
+            padding: 1px;
+        }
+        .unordered-list-container{
+            display: flex;
+        }
+            .horizontal-list{
+                list-style:none;
+                display: flex;
+            }
+            .horizontal-list li{
+                margin-left: 100px;
+            }
+            
+            .display{
+                text-align: center;
+                padding-top: 0px;
+                margin-top: 0px;
+                width: 75%;
+                height: 0%;
+                position:relative;
+                margin-left: 200px;
+                margin-right: 200px;
+            }
+            .display img{
+                max-width: 100%;
+                border-radius: 5px;
+                
+                width: 100%;
+                opacity: 100;
+            }
+            .background-container{
+                background-color: skyblue;
+                background-size: cover;
+                background-repeat: no-repeat;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                
+            }
+            .background-container::before{
+                content: "";
+                background: inherit;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: o;
+                z-index: -1;
+                opacity: 0;
+            }
+            .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .cta{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: skyblue;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: navy;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover{
+            background-color: blue;
+            opacity: 1;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            opacity: 0.8;
+        }
+        .dropdown-content a{
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 15px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown-content a:hover{
+            background-color: #f2f2f2;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+.foot{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Apply styles for larger screens */
+@media only screen and (min-width: 600px) {
+    /* Adjust layout for screens wider than 600px */
+    .container {
+        width: 80%; /* Adjust as needed */
+        margin: 0 auto;
+    }
+}
+
+/* Apply styles for even larger screens */
+@media only screen and (min-width: 900px) {
+    /* Adjust layout for screens wider than 900px */
+    .container {
+        width: 60%; /* Adjust as needed */
+    }
+}
+.con{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 20px;
+            margin-bottom: 0px;
+            list-style: none;
+            margin-top: 10px;
+            justify-content: space-evenly;
+            margin-bottom: 60px;
+            
+            
+        }
+        footer{
+            padding-top: 10px;
+            padding-left: 25px;
+            padding-bottom: 10px;
+        }
+        ul{
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="unordered-list-container">
+        <ul class="horizontal-list">
+            <li><img src="pics/tel.png.png" width="20px" height="20px">&nbsp;<a href="tel:0735143953">Call Customer Care</a></li>
+            <li><img src="pics/mail.png.png" width="20px" height="20px">&nbsp;<a href="mailto:paul.17458.kyu.ac.ke@gmail.com">Email Customer Care</a></li>
+            <li><img src="pics/app.png.png" width="20px" height="20px">&nbsp;<a href="https://wa.me/+254716684446?text=Hi%20Paul">Whatsapp Customer Care</a></li>
+        </ul>
+    </div>
+    </header>
+    <div id="inpatient">
+        <div class="background-container">
+            <div class="display"><img id="display"></div>
+            </div>
+        <center><h1><strong>Inpatient</strong></h1></center>
+        <p>
+            With a bed capacity of 200, the hospital is capable of accomodating all types of patients. The General ward bed has a bed, locker, visitors chair and a common Tv Room. Private rooms have wash basins and Tv. En-suite rooms are self-contained and fitted with Tv.
+        </p>
+    </div>
+    <div id="feeds">
+        <sup><img src="pics/66.png" width="20px" height="20px"></sup>
+        The People's Hospital Intensive care Unit (ICU) was commissioned in 19<sup>th</sup> October, 2000 with a capacity of 20 beds covering both the Intensive Care and High Dependency. The High Dependency Unit takes care of patients who are transiting from ICU to wards as well as patients who require close monitoring but not necessarily in ICU. The ICU is conveniently allocated above the Accident and Emergency Unit and next to the main operating theatres.
+    </div><br><br>
+    <hr>
+<div class="con">
+    <footer>
+        <a href="pics/2.png"><img src="pics/2.png" width="150px" height="150px"></a>
+    </footer>
+    <footer>
+        <strong><h3>Quick Links</h3></strong>
+        <ul>
+            <li><a href="The Peoples Hospital.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="#">Inpatient</a></strong>
+                <strong><a href="outpatient.html">Outpatient</a></strong>
+                <strong><a href="clinic.html">Consultant Clinics</a></strong>
+                <strong><a href="cardiac.html">Cardiac Programs</a></strong>
+                <strong><a href="tele.html">Telemedicine</a></strong>
+                
+                </div>
+            </div></a></li>
+            <li><a href="gal1.html">Gallery</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </footer>
+    <footer><strong><h3>Contact Us</h3></strong>
+    The People's Hospital<br>Jewel Complex, Roysambu<br>PO BOX 1212-00100, Nairobi,<br>Kenya<br>TEL: +254 735 143 953<br>+254 716 684 446<br>temdinguri1@gmail.com
+    </footer>
+<footer><strong><h3>Socials</h3></strong>
+<ul>
+    <li><a href="https://www.instagram.com/_pau.wan"><img src="pics/IG.png.png" width="20px" length="20px"> Instagram</a></li>
+    <li><a href="https://www.facebook.com/paul.wanjuki.3"><img src="pics/fb.png.png" width="20px" length="20px"> Facebook</a></li>
+    <li><a href="https://twitter.com/Temdinguri"><img src="pics/twitt.png.png" width="20px" length="20px"> Twitter</a></li>
+    <li><a href="https://wa.me/254716684446"><img src="pics/app.png.png" width="20px" length="20px"> Whatsapp</a></li>
+</ul></footer>
+</div>
+    <div class="foot">
+        <p>&copy 2024 The People's Hospital. All rights reserved</p>
+    </div>
+    <script type="Text/Javascript">
+        var images = ['pics/inpatient1.jpg','pics/inpatient2.jpg','pics/inpatient3.jpg','pics/inpatient4.jpg','pics/inpatient5.jpg','pics/inpatient6.jpg','pics/inpatient7.jpg','pics/inpatient8.jpg','pics/inpatient9.jpg','pics/inpatient10.jpg','pics/inpatient.jpg'];
+var i =0;
+function slideShow() {
+    document.getElementById("display").src=images[i];
+
+    if(i<images.length-1){
+        i++;
+    }
+    else{
+        i=0;
+    }
+    setTimeout("slideShow()" , 3000);
+}
+window.onload = slideShow;
+    </script>
+</body>
+</html>

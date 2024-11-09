@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<style>
+    /* Apply styles for larger screens */
+@media only screen and (min-width: 600px) {
+    /* Adjust layout for screens wider than 600px */
+    .container {
+        width: 80%; /* Adjust as needed */
+        margin: 0 auto;
+    }
+}
+
+/* Apply styles for even larger screens */
+@media only screen and (min-width: 900px) {
+    /* Adjust layout for screens wider than 900px */
+    .container {
+        width: 60%; /* Adjust as needed */
+    }
+}
+        #container{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 50px;
+            padding-bottom: 10px;
+            list-style: none;
+        }
+ header{
+            margin-left: 30px;
+            padding-top: 10px;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+.con{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 20px;
+            margin-bottom: 0px;
+            list-style: none;
+            margin-top: 10px;
+            justify-content: space-evenly;
+            margin-bottom: 60px;
+            
+            
+        }
+  ul{
+            list-style: none;
+        }
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .cta{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: skyblue;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: navy;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover{
+            background-color: blue;
+            opacity: 1;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            opacity: 0.8;
+        }
+        .dropdown-content a{
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 15px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown-content a:hover{
+            background-color: #f2f2f2;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        #bar{
+    margin-top: 30px;
+    background-color: skyblue;
+    text-align: center;
+    padding-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 0px;
+
+}
+    #bar ul li{
+    display: inline; 
+}
+#bar ul li a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 500ms;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+#active{
+    background-color: red;
+    color: yellow;
+    border-radius: 5px;
+}
+#bar ul li a:hover{
+    background-color: blue;
+    color: white;
+    transition: 500ms;
+    border-radius: 10px;
+}
+
+.img{
+    padding-left: 30px;
+    padding-top: 0px;
+    border-radius: 5px;
+}
+</style>
+    <div id="container">
+        <div class="img">
+    <a href="pics/2.png"><img src="pics\2.png" width="500px" height="150px" class="img"></a></div>
+    <header>
+    <div id="bar">
+        <ul Alink="gold" Vlink="white" link="blue">
+            <li><a href="The Peoples Hospital.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="healthservices.html">Inpatient</a></strong>
+                <strong><a href="outpatient.html">Outpatient</a></strong>
+                    <strong><a href="clinic.html">Consultant Clinics</a></strong>
+                    <strong><a href="cardiac.html">Cardiac Programs</a></strong>
+                    <strong><a href="tele.html">Telemedicine</a></strong>
+                </div>
+            </div></a></li> 
+            <li><a href="gal1.html">Gallery</a></li>
+            
+            <li><a href="contactus.html">Contacts</a></li>
+            <li><a href="#" id="active">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="Admin.html">Admin</a></li>
+            
+        </ul>
+        
+    </div>
+
+</header>
+</div>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url('pics/hosp10.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            margin-top: 50px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input[type="passcode"] {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script type="text/javascript">  
+        // Function to match passwords
+        function matchpass()
+        {  
+            var firstpassword = document.login.password.value;  
+            var secondpassword = document.login.password2.value;  
+            
+            // Check if passwords match
+            if(firstpassword === secondpassword)
+            {  
+                return true;  
+            }  
+            else
+            {  
+                alert("Passwords must be the same!");  
+                return false;  
+            }  
+        }  
+    </script>  
+</head>
+<body>
+    <!-- Form for password matching -->
+    <form name="login" onsubmit="return matchpass()">  
+        <div style="text-align: left;">
+            <label for="username">User Name:</label><br>
+            <input type="text" id="text" name="name" required><br><br>
+            <label for="passcode">Password:</label><br>
+            <input type="passcode" id="passcode" name="password" required><br><br>
+        </div>
+        <input type="submit" value="Submit">  
+    </form>  
+</body>
+</html>

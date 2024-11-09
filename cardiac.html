@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        /* Apply styles for larger screens */
+@media only screen and (min-width: 600px) {
+    /* Adjust layout for screens wider than 600px */
+    .container {
+        width: 80%; /* Adjust as needed */
+        margin: 0 auto;
+    }
+}
+
+/* Apply styles for even larger screens */
+@media only screen and (min-width: 900px) {
+    /* Adjust layout for screens wider than 900px */
+    .container {
+        width: 60%; /* Adjust as needed */
+    }
+}
+         #container{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 50px;
+            padding-bottom: 10px;
+            list-style: none;
+            margin-bottom: 0px;
+        }
+
+    .img{
+    padding-left: 0px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+       ul{
+            list-style: none;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .cta{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: skyblue;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: navy;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover{
+            background-color: blue;
+            opacity: 1;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            opacity: 0.8;
+        }
+        .dropdown-content a{
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 15px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown-content a:hover{
+            background-color: #f2f2f2;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        #bar{
+    margin-top: 30px;
+    background-color: skyblue;
+    text-align: center;
+    padding-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 60px;
+
+}
+    #bar ul li{
+    display: inline; 
+}
+#bar ul li a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 500ms;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+#active{
+    background-color: red;
+    color: yellow;
+    border-radius: 5px;
+}
+#bar ul li a:hover{
+    background-color: blue;
+    color: white;
+    transition: 500ms;
+    border-radius: 10px;
+}
+.foot{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.con{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 20px;
+            margin-bottom: 0px;
+            list-style: none;
+            margin-top: 10px;
+            justify-content: space-evenly;
+            margin-bottom: 60px;
+            
+            
+        }
+        footer{
+            padding-top: 10px;
+            padding-left: 25px;
+            padding-bottom: 10px;
+        }
+        ul{
+            list-style: none;
+        }
+        .head{
+            background-image: url('pics/hosp3.jpg');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 150px;
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0px;
+            padding-top: 50px;
+        }
+        .background-container{
+                background-color: mintcream;
+                background-size: cover;
+                background-repeat: no-repeat;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                
+            }
+            .background-container::before{
+                content: "";
+                background: inherit;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: o;
+                z-index: -1;
+                opacity: 0;
+            }
+            .display{
+                text-align: center;
+                padding-top: 10px;
+                margin-top: 0px;
+                width: 75%;
+                height: 0%;
+                position:relative;
+                margin-left: 200px;
+                margin-right: 200px;
+            }
+            .display img{
+                max-width: 100%;
+                border-radius: 5px;
+                width: 100%;
+            }
+            .background-container{
+                background-color: mistyrose;
+                background-size: cover;
+                background-repeat: no-repeat;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                
+            }
+            .background-container::before{
+                content: "";
+                background: inherit;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: o;
+                z-index: -1;
+                opacity: 0;
+            }
+            .content{
+                background-color: blanchedalmond;
+            }
+            p{
+                font-size: 18px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-left: 40px;
+                opacity: 0.6;
+            }
+            h3{
+                padding-left: 40px;
+                opacity: 0.9;
+                font-size: 25px;
+            }
+            ol{
+                font-size: 18px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-left: 100px;
+                padding-right: 60px;
+                opacity: 0.6;
+            }
+</style>
+    </head>
+<body>
+    <div id="container">
+        <div class="img">
+            <a href="pics/2.png"><img src="pics/2.png" width="500px" height="150px" class="img"></a></div>
+    <header>
+    <div id="bar">
+        <ul Alink="gold" Vlink="white" link="blue">
+            <li><a href="The Peoples Hospital.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta" id="active">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="healthservices.html">Inpatient</a></strong>
+                <strong><a href="outpatient.html">Outpatient</a></strong>
+                    <strong><a href="clinic.html">Consultant Clinics</a></strong>
+                    <strong><a href="#" id="active">Cardiac Programs</a></strong>
+                    <strong><a href="tele.html">Telemedicine</a></strong>
+                </div>
+            </div></a></li> 
+            <li><a href="gal1.html">Gallery</a></li>
+            <li><a href="contactus.html">Contacts</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="Admin.html">Admin</a></li>
+        </ul>
+    </div>
+</header>
+</div>
+
+<div class="head">
+    <h1><center>Cardiac Programs</center></h1>
+    <Marquee behavior="scroll" scrollamount="10" direction="relative"><h3>Welcome To Our Cardiac Program</h3></Marquee>
+</div>
+<div class="background-container">
+    <div class="display"><img id="display"></div>
+    </div>
+    <div class="content">
+    <h3><strong>Cardiac Program</strong></h3>
+    <p>The cardiac program coordinates cardiac care in the hospital for both patients from humble background and those able to pay. The program enrolls patients for The People's Hospital Fundraiser and ensures they receive the care they 
+        require which includes:
+
+        <ol>
+    <li>Cardiac presentations</li>
+    <li> Cardiac catheterization</li>
+    <li>Cardiac surgery</li>
+    </ol>
+</p><br>
+
+ <p>The program plans and coordinates overseas missions by visiting surgeons and cardiologists. It organizes and carries out Rheumatic Fever screening camps in the counties. The program also participates in the organization of the annual The People's Hospital Fundraiser to raise money for the Mater Heart Fund.</p><br>
+
+<h3><strong>Slovak and Czech Team of Cardiology Specialists Contribute to the Development of East-African Pediatric Cardiology Centre of Excellence</strong></h3> 
+
+<p>At the beginning of October, eight Czech and Slovak specialists in cardiac surgery, cardio anesthesia, intensive post-operative care, cardiology and echo diagnostic provided knowledge transfer to the local staff of the The People's Hospital in Nairobi, Kenya. The mission is a continuation of an 11-year-long project supported by SlovakAid since 2020. In a week-long mission, the medical team diagnosed twenty children and successfully performed life-saving surgeries on nine children with complex congenital heart defects. The life-saving procedures are given to specially selected children from the poorest areas of Kenya who do not have the financial resources for the operation. Moreover, the ICU nurses lectured the nursing staff on safe and practical intravenous therapy and the management of complications after cardiac surgery used at the National Institute of Cardiovascular Diseases (NICD), Bratislava, Slovakia, and at the Motol University Hospital, Prague, Czech Republic. Thanks to the team of pharmacists from the Heart for NICD pharmacy, the mission of Heart for Kenya also includes the delivery of medical supplies necessary for cardiac surgery, cardio anesthesia, intensive post-operative care, cardiology, and echodiagnostics.</p>
+
+<p>In 2024, the mission continues with another visit of the medical team to The People's Hospital and an internship at the NICD for the management of the Cardiac program of The People's Hospital dedicated to introducing procedural, methodological, personnel, economic, and other aspects of an established cardiac center. The internship provides the basis for building a center of excellence, creating an activity plan for the project’s sustainability, and helping The People's Hospital to effectively create opportunities for independent pediatric cardiac surgery outside the missions and building cardiac care in the East African region.</p><br>
+
+<h3><strong>Paediatric Cardiac Services</strong></h3>
+<p>
+    At The Peole's hospital, Children’s Heart Clinic, we provide comprehensive care for children and adolescents with heart and blood vessel conditions. Our goal is to understand the needs of our children and their families, and to provide the best care, our pediatric health system gives the Children’s Heart Clinic more resources and access to specialists to provide the best possible care for your child. Paediatric Cardiac clinics days are:
+
+    <ol>
+ <li>Monday & Tuesday 9:00 am</li>
+ <li>Thursday 11:00 am</li>
+</ol>
+
+<p>A dedicated team of specialist: Pediatric Cardiologists and Cardiac Nurses offers preventive, promotive, and curative and rehabilitation management in matters related to cardiac care. Counseling on life style modificated and treatment adherence is also offered at the clinic and by the nutritionist.</p>
+
+<p>Examination And Tests Done Are:</p>
+
+<ol>
+<li>Echocardiogram</li>
+<li>Electrocardiography</li>
+<li>Chest X-Ray</li>
+<li>Full Haemogram</li>
+<li>Blood Group</li>
+</ol>
+</p><br>
+
+<h3><strong>Adult Cardiac Services</strong></h3>
+<p>The specialist heart clinic is fully equipped to diagnose and treat a variety of cardiovascular and heart diseases such as coronary heart disease. We have an ultramodern facility with state-of-art medical equipment to offer the best diagnostic and therapeutic options that are tailored to different needs of the patients. Cardiac clinics days are:
+    Wednesday, Thursday & Friday 8.00am<br><br>
+    
+    Examination and tests offered include:<br><br>
+    
+    <ol>
+     <li>Cardio-metabolic risk assessment</li>
+     <li>Electrocardiography (ECG)</li>
+     <li>Trans-oesophageal Echo (TEE)</li>
+     <li>Ambulatory Electrocardiography (Halter Monitor)</li>
+     <li>Exercise electrocardiography (Stress testing)</li>
+     <li>Ambulatory Blood pressure</li>
+     <li>Test to diagnose CORONARY ARTERY DISEASE (CAD)</li>
+    </ol>
+</p>
+    
+     <strong><h3>#Healthy heart, healthy you.</h3></strong><br>
+
+     <h3><strong>Cardiac Catheterization Laboratory (CATH-LAB)</strong></h3>
+     <p>Cardiac catheterization is a procedure used to diagnose and treat certain cardiovascular conditions. We have an ultramodern facility with state-of-art medical equipment to offer the best diagnostic and therapeutic options that are tailored to different needs of the patients. At The People's hospital, we have a state of the art cardiac catheterization laboratory, with qualified, competent team of cardiologist, cardiac nurses, radiographers, anaesthetist team to ensure the procedures are successfully. The unit operates on a 24hour base, always standby in case of emergency or eventuality. Procedures offered at the cathlab are:<br><br>
+
+        <ol>
+        <li>Coronary angiography (Heart catheterization)</li>
+        <li>Coronary angioplasty (PTCA/PCI)</li>
+        <li>Pacemaker’s insertion and programming</li>
+        <li>Balloon Valvuloplasty</li>
+        <li>Inferior vena cava (IVC) filter insertion</li>
+        <li>Electrophysiology studies (EPS) and Ablation</li>
+    </ol>
+</p>
+       
+        <h3><strong>#Take care of your heart, don’t let it fall apart.</strong></h3><br><br>
+        
+    </div>
+<hr>
+<div class="con">
+    <footer>
+        <a href="pics/2.png"><img src="pics/2.png" width="150px" height="150px"></a>
+    </footer>
+    <footer>
+        <strong><h3>Quick Links</h3></strong>
+        <ul>
+            <li><a href="The Peoples Hospital.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="healthservices.html">Inpatient</a></strong>
+                <strong><a href="outpatient.html">Outpatient</a></strong>
+                <strong><a href="clinic.html">Consultant Clinics</a></strong>
+                <strong><a href="#">Cardiac Programs</a></strong>
+                <strong><a href="tele.html">Telemedicine</a></strong>
+                </div>
+            </div></a></li>
+            <li><a href="gal1.html">Gallery</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </footer>
+    <footer><strong><h3>Contact Us</h3></strong>
+    The People's Hospital<br>Jewel Complex, Roysambu<br>PO BOX 1212-00100, Nairobi,<br>Kenya<br>TEL: +254 735 143 953<br>+254 716 684 446<br>temdinguri1@gmail.com
+    </footer>
+<footer><strong><h3>Socials</h3></strong>
+<ul>
+    <li><a href="https://www.instagram.com/_pau.wan"><img src="pics/IG.png.png" width="20px" length="20px"> Instagram</a></li>
+    <li><a href="https://www.facebook.com/paul.wanjuki.3"><img src="pics/fb.png.png" width="20px" length="20px"> Facebook</a></li>
+    <li><a href="https://twitter.com/Temdinguri"><img src="pics/twitt.png.png" width="20px" length="20px"> Twitter</a></li>
+    <li><a href="https://wa.me/254716684446"><img src="pics/app.png.png" width="20px" length="20px"> Whatsapp</a></li>
+</ul></footer>
+</div>
+    <div class="foot">
+        <p>&copy 2024 The People's Hospital. All rights reserved</p>
+    </div> 
+    <script language="Javascript">
+        var images = ['pics/heart.jpg','pics/heart1.jpg','pics/heart2.jpg','pics/heart3.jpg','pics/heart4.jpg','pics/heart5.jpg','pics/heart6.jpg','pics/heart7.jpg','pics/heart8.jpg','pics/heart9.jpg','pics/heart10.jpg'];
+var i =0;
+function slideShow() {
+    document.getElementById("display").src=images[i];
+
+    if(i<images.length-1){
+        i++;
+    }
+    else{
+        i=0;
+    }
+    setTimeout("slideShow()" , 3000);
+}
+window.onload = slideShow;
+    </script>
+</body>
+</html>

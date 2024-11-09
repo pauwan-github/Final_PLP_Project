@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Apply styles for larger screens */
+@media only screen and (min-width: 600px) {
+    /* Adjust layout for screens wider than 600px */
+    .container {
+        width: 80%; /* Adjust as needed */
+        margin: 0 auto;
+    }
+}
+
+/* Apply styles for even larger screens */
+@media only screen and (min-width: 900px) {
+    /* Adjust layout for screens wider than 900px */
+    .container {
+        width: 60%; /* Adjust as needed */
+    }
+}
+        #container{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 50px;
+            padding-bottom: 10px;
+            list-style: none;
+        }
+        .img{
+    padding-left: 30px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+header{
+            margin-left: 30px;
+            padding-top: 10px;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+       
+ul{
+            list-style: none;
+        }
+#bar{
+    margin-top: 30px;
+    background-color: skyblue;
+    text-align: center;
+    padding-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 0px;
+
+}
+    #bar ul li{
+    display: inline; 
+}
+#bar ul li a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 500ms;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+#active{
+    background-color: red;
+    color: yellow;
+    border-radius: 5px;
+}
+#bar ul li a:hover{
+    background-color: blue;
+    color: white;
+    transition: 500ms;
+    border-radius: 10px;
+}
+.dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .cta{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: skyblue;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: navy;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover{
+            background-color: blue;
+            opacity: 1;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            opacity: 0.8;
+        }
+        .dropdown-content a{
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 15px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown-content a:hover{
+            background-color: #f2f2f2;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        #title{
+            background-image: url('pics/hosp.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+        p{
+                font-size: 18px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-left: 60px;
+                padding-right: 60px;
+                opacity: 0.6;
+            }
+            ol{
+                font-size: 18px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-left: 100px;
+                padding-right: 60px;
+                opacity: 0.6;
+            }
+h3{
+    padding-left: 60px;
+    font-size: 25px;
+    opacity: 0.9;
+}
+.tele{
+    padding: 30px;
+}
+.med{
+    background-color: #ccc;
+    padding-left: 100px;
+    color: #fff;
+    font-size: 30px;
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+        .con{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 20px;
+            margin-bottom: 0px;
+            list-style: none;
+            margin-top: 10px;
+            justify-content: space-evenly;
+            margin-bottom: 60px;
+            
+            
+        }
+        footer{
+            padding-top: 10px;
+            padding-left: 25px;
+            padding-bottom: 10px;
+        }
+        .foot{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div class="img">
+            <a href="pics/2.png"><img src="pics/2.png" width="500px" height="150px" class="img"></a></div>
+    <header>
+    <div id="bar">
+        <ul Alink="gold" Vlink="white" link="blue">
+            <li><a href="The Peoples Hospital.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta" id="active">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="healthservices.html">Inpatient</a></strong>
+                    <strong><a href="outpatient.html">Outpatient</a></strong>
+                    <strong><a href="clinic.html">Consultant Clinics</a></strong>
+                    <strong><a href="cardiac.html">Cardiac Programs</a></strong>
+                    <strong><a href="#" id="active">Telemedicine</a></strong>
+                </div>
+            </div></a></li> 
+            <li><a href="gal1.html">Gallery</a></li>
+            <li><a href="contactus.html">Contacts</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="Admin.html">Admin</a></li>
+        </ul>
+    </div>
+</header>
+</div>
+
+<div id="title">
+    <h1>Telemedicine</h1>
+    <h3><marquee behavior="scroll" scrollamount="10" direction="relative">Welcome To Our Telemedicine</marquee></h3>
+</div>
+
+<div class="tele">
+<img src="pics/telemedicine.jpg" width="100%" height="800px">
+</div>
+
+<h3><strong>Telemedicine</strong></h3>
+
+<p>Telemedicine/Telehealth is the use of digital information and communication technologies, such as computers and mobile devices, to access health care services remotely and manage health care. Telemedicine is being used to improve clinical care and reduce cost of health care for patients<p>
+
+    <p>The People's Hospital has launched a pilot aimed at reducing the time it takes for our patients to receive specialised care from our consultants, therapists and nurses from different technical backgrounds. The intent of telemedicine is to improve patient diagnosis, therapy, training and education</p>
+    
+    <p>What are some of the benefits to the patient?
+
+    <ol>
+     <li>Improved clinical outcomes</li>
+     <li>Shorter waiting times</li>
+     <li>Cost effective</li>
+     <li>Convenience to patient and family</li>
+    </ol>
+    </p>
+
+    <p>The telemedicine project is available in the following clinics
+    
+    <ol>
+     <li>Midwife led Antenatal Clinic</li>
+     <li>Main Hospital A/E</li>
+     <li>Kasarani Medical Centre</li>
+     <li>Thika Medical Centre</li>
+     <li>Karen Medical Centre</li>
+    </ol>
+     </p>
+    
+    <p>Doctors also conduct virtual ward rounds through the platform in the following units
+
+    <ol>
+     <li>Isolation Unit</li>
+     <li>McAuley WardE</li>
+     </ol>
+    </p>
+
+<h3><strong>Patient privacy and Protection of Information</strong></h3>
+
+<p>All patient information is secured through a state of the art, digitally encrypted telemedicine platform</p>
+
+<p>The telemedicine platform is fully HIPPA and POPI compliant for protection of patient information. HIPPA is the United States legislation that provides data privacy and security provisions for safeguarding medical information</p>
+
+<p>POPI is the South African Act that protects the collecting, processing, storing and sharing of someone's personal information</p>
+
+<p>All patient information will be handled according to the Kenyan Data Protection Act</p>
+
+<div class="med">
+    "All the telemedicine solutions provided by The People's Hospital have been deployed across various countries and hundreds of hospitals around the world
+</div>
+
+<h3><strong>HOME BASED CARE PROGRAM</strong></h3>
+<p>The World Health Organisation(WHO) recommends that all laboratory confirmed cases of COVID-19 be isolated and cared for in a health care facility. However, priority is given to those that have poor outcome including severe symptoms, critical or chronic illness. WHO further recommends safe home-based isolation and care</p>
+
+    <p>The People's Hospital was providing home-based care follow up to our clients with COVID-19 infection</p>
+    
+    <p>We have a doctor, counsellor and other healthcare providers that call the patients periodically to ensure proper home management which will be included in the package</p>
+
+
+
+<hr>
+<div class="con">
+    <footer>
+        <a href="pics/2.png"><img src="pics/2.png" width="150px" height="150px"></a>
+    </footer>
+    <footer>
+        <strong><h3>Quick Links</h3></strong>
+        <ul>
+            <li><a href="The Peoples Hospital.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="healthservices.html">Inpatient</a></strong>
+                <strong><a href="outpatient.html">Outpatient</a></strong>
+                <strong><a href="clinic.html">Consultant Clinics</a></strong>
+                <strong><a href="cardiac.html">Cardiac Programs</a></strong>
+                <strong><a href="#">Telemedicine</a></strong>
+                </div>
+            </div></a></li>
+            <li><a href="gal1.html">Gallery</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </footer>
+    <footer><strong><h3>Contact Us</h3></strong>
+    The People's Hospital<br>Jewel Complex, Roysambu<br>PO BOX 1212-00100, Nairobi,<br>Kenya<br>TEL: +254 735 143 953<br>+254 716 684 446<br>temdinguri1@gmail.com
+    </footer>
+<footer><strong><h3>Socials</h3></strong>
+<ul>
+    <li><a href="https://www.instagram.com/_pau.wan"><img src="pics/IG.png.png" width="20px" length="20px"> Instagram</a></li>
+    <li><a href="https://www.facebook.com/paul.wanjuki.3"><img src="pics/fb.png.png" width="20px" length="20px"> Facebook</a></li>
+    <li><a href="https://twitter.com/Temdinguri"><img src="pics/twitt.png.png" width="20px" length="20px"> Twitter</a></li>
+    <li><a href="https://wa.me/254716684446"><img src="pics/app.png.png" width="20px" length="20px"> Whatsapp</a></li>
+</ul></footer>
+</div>
+    <div class="foot">
+        <p>&copy 2024 The People's Hospital. All rights reserved</p>
+    </div>
+    
+</body>
+</html>

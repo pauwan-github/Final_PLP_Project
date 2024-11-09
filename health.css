@@ -1,0 +1,74 @@
+#body{
+    background-color: gray;
+    border-radius: 5px;
+}
+/* heading css codes*/
+.headings{
+    Background-color: gray;
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+    font-style:normal;
+    color: magenta;
+    border-radius: 5px;
+}
+/* marquee css codes*/
+#maq{
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* navigation bar css codes*/
+#bar{
+    margin-top: 10px;
+    background-color: skyblue;
+    text-align: center;
+    padding-left: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#bar ul li{
+    display: inline; 
+}
+#bar ul li a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 500ms;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+#active{
+    background-color: red;
+    color: yellow;
+}
+#bar ul li a:hover{
+    background-color: blue;
+    color: white;
+    transition: 500ms;
+    border-radius: 10px;
+}
+#about{
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+#histo{
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+#tab1{
+    text-align: center;
+}
+

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The People's Hospital</title>
+    <style>
+        /* Apply styles for larger screens */
+@media only screen and (min-width: 600px) {
+    /* Adjust layout for screens wider than 600px */
+    .container {
+        width: 80%; /* Adjust as needed */
+        margin: 0 auto;
+    }
+}
+
+/* Apply styles for even larger screens */
+@media only screen and (min-width: 900px) {
+    /* Adjust layout for screens wider than 900px */
+    .container {
+        width: 60%; /* Adjust as needed */
+    }
+}
+        #container{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 50px;
+            padding-bottom: 10px;
+            list-style: none;
+        }
+        header{
+            margin-left: 30px;
+            padding-top: 10px;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+    
+        .goals{
+        background-image: url('pics/hosp.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display:flex;
+       
+        }
+        .goals0{
+            display: flex;
+            opacity: 0.7;
+            margin-bottom: 0px;
+           
+        }
+        .goal1{
+            margin-left: 50px;
+            width: 300px;
+            height: 150px; 
+            background-color: white;
+            padding-left: 20px;
+            color: black;
+            border-radius: 10px;
+        }
+        .about{
+            background-color: white;
+            align-items: center;
+            margin-left: 50px;
+            font-size: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .back{
+            background-color: #a17171;
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .foot{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.con{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 20px;
+            margin-bottom: 0px;
+            list-style: none;
+            margin-top: 10px;
+            justify-content: space-evenly;
+            margin-bottom: 60px;
+            
+            
+        }
+        footer{
+            padding-top: 10px;
+            padding-left: 25px;
+            padding-bottom: 10px;
+        }
+        ul{
+            list-style: none;
+        }
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .cta{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: skyblue;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: navy;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover{
+            background-color: blue;
+            opacity: 1;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            opacity: 0.8;
+        }
+        .dropdown-content a{
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 15px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown-content a:hover{
+            background-color: #f2f2f2;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        #bar{
+    margin-top: 30px;
+    background-color: skyblue;
+    text-align: center;
+    padding-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 0px;
+
+}
+    #bar ul li{
+    display: inline; 
+}
+#bar ul li a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 500ms;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+#active{
+    background-color: red;
+    color: yellow;
+    border-radius: 5px;
+}
+#bar ul li a:hover{
+    background-color: blue;
+    color: white;
+    transition: 500ms;
+    border-radius: 10px;
+}
+
+.img{
+    padding-left: 30px;
+    padding-top: 0px;
+    border-radius: 5px;
+}
+.open{
+    display: flex;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    justify-content: space-evenly;
+}
+.open1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: aqua;
+    height: 150px;
+    Width: 300px;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.who{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+.who1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.who2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 150px;
+    Width: 300px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+table, th, td{
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 1px;
+        width: 1%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        text-align: center;
+        color: #fff;
+    }
+    table#alter tr:nth-child(even){
+        background-color: skyblue;
+    }
+    table#alter tr:nth-child(odd){
+        background-color: grey;
+    }
+    table#alter th{
+        color: White;
+        background-color: skyblue;
+    }
+.cont0{
+    background-image: url('pics/hosp18.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 30px;
+    text-align: center;
+   background-size: cover;
+
+}
+.cont1{
+   
+   color: black;
+   padding-left: 50px;
+   padding-right: 10px;
+   width: 100%;
+   height: 200px;
+   padding-top: 80px;
+   padding-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+    <header><img src="pics\location.png" width="30px" length="30px" >&nbsp Roysambu, Jewellery Complex Plaza, Ground Floor</header>
+    <header><img src="pics\mail.png.png" width="30px" length="30px" >&nbsp peopleshosp@gmail.com </header>
+    <header><img src="pics\tel.png.png" width="30px" length="30px" >&nbsp +254716684446</header>
+    <header><a href="login.html">Login</a></header>
+    <header><a href="signup.html">Sign up</a></header>
+    <header><a href="Admin.html">Admin</a></header>
+    </div>
+    <div id="container">
+        <div class="img">
+    <a href="pics/2.png"><img src="pics\2.png" width="500px" height="150px" class="img"></a></div>
+    <header>
+    <div id="bar">
+        <ul Alink="gold" Vlink="white" link="blue">
+            <li><a href="#" id="active">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="healthservices.html">Inpatient</a></strong>
+                <strong><a href="outpatient.html">Outpatient</a></strong>
+                    <strong><a href="clinic.html">Consultant Clinics</a></strong>
+                    <strong><a href="cardiac.html">Cardiac Programs</a></strong>
+                    <strong><a href="tele.html">Telemedicine</a></strong>
+                </div>
+            </div></a></li> 
+            <li><a href="gal1.html">Gallery</a></li>
+            
+            <li><a href="contactus.html">Contacts</a></li>
+
+            
+        </ul>
+        
+    </div>
+    <li><a href="#alter">Schedule</a></li>
+</header>
+
+</div>
+
+<div class="goals">
+    <div class="goals0">
+    <div class="goal1">
+    <Strong><h3>Our Motto</h3></Strong>
+    Best services to all.
+    </div>
+    <div class="goal1">
+        <strong><h3>Vision</h3></strong>
+        To help people live comfortable lives in good health.
+        </div>
+        <div class="goal1">
+            <strong><h3>Mission</h3></strong>
+            To reach even to the remote of areas and offer services to people.
+        </div>
+    </div>
+</div>
+<div class="open">
+    <div class="open1">
+        <h3>Emergency Cases</h3>
+        Call Centre on 07******** / 07******** / 
+        Our Accidents and Emergency Department on 07********
+    </div>
+    <div class="open1">
+        <h3>Consultants Timetable</h3>
+        View our Specialist Clinic Schedule for your planning. 
+        We are ready to serve you and your family.
+    </div>
+    <div class="open1">
+<h3> Opening hours</h3>
+Monday - Saturday          Open
+Sundays                    Open
+Public Holidays            Open
+    </div>
+</div>
+<div class="who">
+    #We Are Always Ready To Help You &<br> Your Family
+</div>
+<center>We perform to the best of our ability to achieve the highest attainable standard</h4></center>
+<div class="about">
+    <div class="who1">
+        <div class="who2">
+    <h3>Emergency Help</h3>
+We provide quick emergency responses when you call our emergency numbers
+        </div>
+        <div class="who2">
+            <h3>Enriched Pharmacy</h3>
+Our pharmacies are fully equipped with drugs to cure ailments and fasten your recovery.
+        </div>
+        <div class="who2">
+            <h3>Medical Treatment</h3>
+We provide quality health care to our customers and clients.
+        </div>
+    </div>
+    <div class="cont0">
+        <div class="cont1">
+<h3>176</h3>
+Hospital Rooms
+        </div>
+        <div class="cont1">
+            <h3>Many</h3>  
+            Specialist Doctors
+        </div>
+        <div class="cont1">
+            <h3>Many</h3>  
+           Happy Patients
+        </div>
+        <div class="cont1">
+            <h3>25</h3>  
+           Years of Service
+        </div>
+    </div>
+
+    <center><strong><h3>About Us</h3></strong></center>
+    <p>The People's Hospital is found along Thika Super Highway on Jewellery Complex Plaza Ground Floor in Roysambu. We are licensed by <strong>Ministry Of Health (MOH)</strong> to conduct health practices to people. We are registered by the <b>Kenya Revenue Authorities (KRA) </b>and allocated <strong>KRA PIN A018819456Q.</strong></p>
+   
+    <div class="back">
+        <center><strong><h3>Background</h3></strong></center>
+    <p>The People's Hospital was found on the 2<sup>nd</sup>July, 1999 by: <dl><dt>Dr. Philips Johnson</dt> <dd>-PhD Neurolody</dd> <dd>-MSc Drug and Substance Abuse</dd> <dd>-BSc Cardiolody</dd> <dt>Prof. Sarah Kamau</dt> <dd>-PhD Paeditry</dd> <dd>-MSc Human Resource</dd> <dd>-BSc Nursing</dd> <dt>Dr. Melvin Teddy</dt> <dd>-PhD Bio Chemisrty</dd> <dd>-MSc Phsychology</dd> <dd>-BSc Gynaecology</dd></dl></p>
+</div>
+</div>
+<h3><center><strong><hr>This is our main hospital specialists schedule</hr></strong></center></h3><br>
+    <table id="alter">
+        <tr>
+            <th colspan="4"><h2>Departments</h3></th>
+        </tr>
+        <tr>
+            <td><h3>Services</h3></td>
+            <td><h3>Day</h3></td>
+            <td><h3>Time</h3></td>
+            <td><h3>Doctor</h3></td>
+        </tr>
+        <tr>
+            <td rowspan="4"><h5>Paeditriac</h5></td>
+            <tr>
+                <td><h5>Mondays</h5></td>
+                <td><h5>8:00am - 5:00pm</h5></td>
+                <td><h5>Prof. Sarah Kamau</h5></td>
+            </tr>
+            <tr>
+                <td><h5>Tuesdays</h5></td>
+                <td><h5>10:00am - 8:00pm</h5></td>
+                <td><h5>Dr. Onesmus Obondi</h5></td>
+            </tr>
+            <tr>
+                <td><h5>Fridays</h5></td>
+                <td><h5>9:00am - 9:00pm</h5></td>
+                <td><h5>Prof. Sarah Kamau</h5></td>
+            </tr>
+        </tr>
+    
+        <tr>
+            <td rowspan="3"><h5>Dentistry</h5></td>
+            <tr>
+                <td><h5>Mondays</h5></td>
+                <td><h5>11:00am - 5:00pm</h5></td>
+                <td><h5>OJ Kipkoech</h5></td>
+            </tr>
+            <tr>
+                <td><h5>Wednesdays</h5></td>
+                <td><h5>8:00am - 8:00pm</h5></td>
+                <td><h5>Dr. Catherine Kyalo</h5></td>
+            </tr>
+        </tr>
+    
+    
+        <tr>
+            <td rowspan="7"><h5>Maternity</h5></td>
+                <td><h5>Mondays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Melvin Teddy and Felista Akinyi</h5></td>
+        </tr>
+        <tr>
+                <td><h5>Tuesdays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Kennedy Osiando Carol Lung'aho</h5></td>
+        </tr>
+        <tr>
+                <td><h5>Wednesdays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Bridget Adhiambo and Justina Wamae</h5></td>
+        </tr>
+        <tr>
+                <td><h5>Thursdays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Melvin Teddy and Margaret Obondi</h5></td>
+        </tr>
+        <tr>
+                <td><h5>Fridays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. James Kamau and Pricilla Zawadi</h5></td>
+        </tr>
+        <tr>
+                <td><h5>Saturdays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Melvin Teddy and Immaculate Njeri</h5></td>
+        </tr>
+        <tr>
+                <td><h5>Sundays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Paul Peter and Mercy Mukunga</h5></td>
+        </tr>
+        <tr>
+            <td rowspan="7"><h5>Medical Check-Up</h4></td>
+                <td><h5>Mondays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Kelvin Kamau and Atieno Kathuri</h5></td>
+        </tr>
+    
+        <tr>
+                <td><h5>Tuesdays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Otiende Amollo and Norah Mueni</h5></td>
+        </tr>
+    
+        <tr>
+                <td><h5>Wednesdays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Rose Bukuku and Frances Ben</h5></td>
+        </tr>
+    
+        <tr>
+                <td><h5>Thursdays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Chinnenye Nnebe and Ray Emodi</h5></td>
+        </tr>
+        <tr>
+                <td><h5>Fridays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Annan Chekwuemeka and Doris Ifeka</h5></td>
+        </tr>
+        <tr>
+                <td><h5>Saturdays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Pamela Okoye and Adelana Tana</h5></td>
+        </tr>
+        <tr>
+                <td><h5>Sundays</h5></td>
+                <td><h5>24Hrs</h5></td>
+                <td><h5>Dr. Chike Daniels and Stella Udeze</h5></td>
+        </tr>
+    </table>
+    <a href="#bar"><h3><p align="right">GO UP</p></h3></a>
+<hr>
+<div class="con">
+    <footer>
+        <a href="pics/2.png"><img src="pics\2.png" width="150px" height="150px"></a>
+    </footer>
+    <footer>
+        <strong><h3>Quick Links</h3></strong>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="healthservices.html">Inpatient</a></strong>
+                <strong><a href="outpatient.html">Outpatient</a></strong>
+                <strong><a href="clinic.html">Consultant Clinics</a></strong>
+                <strong><a href="cardiac.html">Cardiac Programs</a></strong>
+                <strong><a href="tele.html">Telemedicine</a></strong>
+                </div>
+            </div></a></li>
+            <li><a href="gal1.html">Gallery</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </footer>
+    <footer><strong><h3>Contact Us</h3></strong>
+    The People's Hospital<br>Jewel Complex, Roysambu<br>PO BOX 1212-00100, Nairobi,<br>Kenya<br>TEL: +254 735 143 953<br>+254 716 684 446<br>temdinguri1@gmail.com
+    </footer>
+<footer><strong><h3>Socials</h3></strong>
+<ul>
+    
+    <li><a href="https://www.instagram.com/_pau.wan"><img src="pics\IG.png.png" width="20px" length="20px"> Instagram</a></li>
+    <li><a href="https://www.facebook.com/paul.wanjuki.3"><img src="pics\fb.png.png" width="20px" length="20px"> Facebook</a></li>
+    <li><a href="https://twitter.com/Temdinguri"><img src="pics\twitt.png.png" width="20px" length="20px"> Twitter</a></li>
+    <li><a href="https://wa.me/254716684446"><img src="pics\app.png.png" width="20px" length="20px"> Whatsapp</a></li>
+</ul></footer>
+</div>
+    <div class="foot">
+        <p>&copy 2024 The People's Hospital. All rights reserved</p>
+    </div>
+</body>
+</html>

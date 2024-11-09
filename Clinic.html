@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic</title>
+
+    <style>
+/* Apply styles for larger screens */
+@media only screen and (min-width: 600px) {
+    /* Adjust layout for screens wider than 600px */
+    .container {
+        width: 80%; /* Adjust as needed */
+        margin: 0 auto;
+    }
+}
+
+/* Apply styles for even larger screens */
+@media only screen and (min-width: 900px) {
+    /* Adjust layout for screens wider than 900px */
+    .container {
+        width: 60%; /* Adjust as needed */
+    }
+}
+#container{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 50px;
+            padding-bottom: 10px;
+            list-style: none;
+        }
+        .img{
+    padding-left: 30px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+header{
+            margin-left: 30px;
+            padding-top: 10px;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+       
+ul{
+            list-style: none;
+        }
+#bar{
+    margin-top: 30px;
+    background-color: skyblue;
+    text-align: center;
+    padding-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 0px;
+
+}
+    #bar ul li{
+    display: inline; 
+}
+#bar ul li a{
+    
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 500ms;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+#active{
+    background-color: red;
+    color: yellow;
+    border-radius: 5px;
+}
+#bar ul li a:hover{
+    background-color: blue;
+    color: white;
+    transition: 500ms;
+    border-radius: 10px;
+}
+.dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .cta{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: skyblue;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: navy;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover{
+            background-color: blue;
+            opacity: 1;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            opacity: 0.8;
+        }
+        .dropdown-content a{
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 15px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .dropdown-content a:hover{
+            background-color: #f2f2f2;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        #title{
+            background-image: url('pics/hosp.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+            color: white;
+        }
+        .content{
+                background-color: mintcream;
+            }
+            p{
+                font-size: 18px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding-left: 60px;
+                padding-right: 60px;
+                opacity: 0.6;
+            }
+h3{
+    padding-left: 60px;
+    font-size: 25px;
+    opacity: 0.9;
+}
+
+
+        .con{
+            display:flex;
+            margin-left: 0px;
+            background-color: lightgray;
+            padding-left: 20px;
+            margin-bottom: 0px;
+            list-style: none;
+            margin-top: 10px;
+            justify-content: space-evenly;
+            margin-bottom: 60px;
+            
+            
+        }
+        footer{
+            padding-top: 10px;
+            padding-left: 25px;
+            padding-bottom: 10px;
+        }
+        .foot{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    margin-top: 10px;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+
+
+    <div id="container">
+        <div class="img">
+            <a href="pics/2.png"><img src="pics/2.png" width="500px" height="150px" class="img"></a></div>
+    <header>
+    <div id="bar">
+        <ul Alink="gold" Vlink="white" link="blue">
+            <li><a href="The Peoples Hospital.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta" id="active">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="healthservices.html">Inpatient</a></strong>
+                    <strong><a href="outpatient.html">Outpatient</a></strong>
+                    <strong><a href="#" id="active">Consultant Clinics</a></strong>
+                    <strong><a href="cardiac.html">Cardiac Programs</a></strong>
+                    <strong><a href="tele.html">Telemedicine</a></strong>
+                </div>
+            </div></a></li> 
+            <li><a href="gal1.html">Gallery</a></li>
+            <li><a href="contactus.html">Contacts</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign up</a></li>
+            <li><a href="Admin.html">Admin</a></li>
+        </ul>
+    </div>
+</header>
+</div>
+
+<div id="title">
+    <h1>Consultants Clinics</h1>
+    <h3><marquee behavior="scroll" scrollamount="10" direction="relative">Welcome To Our Consultant Clinic</marquee></h3>
+</div>
+
+
+<div class="content">
+<h3><strong>Consultants Clinics Services</strong></h3>
+<p>Available services at the consultants clinics</p>
+
+<h3><strong>Asthma Clinic</strong></h3>
+<p>Asthma is an allergic/inflammatory lung disease which affects children and adults too. If not well controlled can affect the quality of life for the patient. Our clinic offers preventive and curative services through education on prevention of asthmatic attacks, correct use of inhalers by a team of experienced nurses and consultants chest specialists</p>
+
+<h3><strong>Dermatology</strong></h3>
+<p>Skin disease can affect a person’s self-esteem. Our clinic takes care of patients with skin disorders such as eczema {skin allergies}, dermatitis, and psoriasis among other skin disorders. Visit our clinics and get an experience with our well qualified dermatologists</p>
+
+<h3><strong>Diabetology/Endocrinology</strong></h3>
+<p>The clinic is involved in Diseases of the endocrine system to include thyroid disorders, diabetes and growth hormones among others. Personalized Health education and curative services are done by our experienced nurses and our endocrinologists.</p>
+<h3><strong>ENT Surgery Clinic</strong></h3>
+<p>The clinic take care ear, nose and throat disorders of both children and adults to include tonsillitis, rhinitis, and sinusitis otitis media among other ENT disorders. Visit the clinic and get an experience with our very qualified ENT surgeons</p>
+
+<h3><strong>Breast Clinic</strong></h3>
+<p>This is a clinic which deals with breast diseases in men and women of reproductive age. It involves breast examination by a surgeon, screening of breast cancer, health education on self-breast examination and follow up</p>
+
+<h3><strong>Haematology</strong></h3>
+<p>This is a clinic which deals with all blood disorders. This involves screening of the blood for diseases such as anemia, leukemia and other complex and simple blood disorders. The clinic is run by one of the specialized hematology in Kenya through referral.</p>
+
+<h3><strong>Gynaecology</strong></h3>
+<p>This is a specialty which takes care of male and female reproductive health. We offer preventive and curative services upon referral. Fertility and menopausal issues are also addressed in this clinic by our well experienced gynacologists.Visit us and get all your reproductive health issues addressed at affordable rates</p>
+
+<h3><strong>Orthopaedic Clinics</strong></h3>
+<p>This is a clinic which deals with diagnostic and therapeutic care of the musculoskeletal system abnormalities which includes bones, tendons, and large joints. Joint diseases of the hip, shoulder and knee are also addressed; surgical intervention is done as necessary. Nerve injuries are also addressed in this specialty with our highly experienced orthopedic surgeons</p>
+
+<h3><strong>Opthalmology</strong></h3>
+<p>Poor vision can affect the function and the quality of every individual. This specialty has a role of restoring, maintaining and improving vision to all our Clients. The clinic is run by experienced ophthalmologists with state of the art eye equipment. Retina care for all our diabetic and hypertensive patients is also given</p>
+
+<h3><strong>Rheumatology</strong></h3>
+<p>The People's Hospital has a state of art rheumatology clinic with modern ultra sound machine to scan small joints. This is a clinic which cares for patients with connective tissue disorders which includes rheumatoid arthritis and other joint related abnormalities and involves; Consultations, diagnosis and health education on small and large joints diseases care and follow up to control symptoms and pain. Visit our clinic and get the best joint care from best Rheumatologist in the country</p>
+
+<h3><strong>General Medical Clinic</strong></h3>
+<p>This is a specialized clinic where general illnesses such as pneumonia, body aches ,malaria, body swelling among others are addressed by our general physicians</p>
+
+<h3><strong>Pain Clinic</strong></h3>
+<p>The clinic is indicated for patients with acute and longstanding pain which oftenly affect the quality of life. Patients receive psychotherapy and curative services from our experienced pain control experts. Visit our pain clinic and receive effective pain control from our consultants on pain management and enjoy a pain free life</p>
+
+<h3><strong>Neurology Clinics</strong></h3>
+<p>Nerve and brain diseases have become common in our society.Diseases like epilepsy, parkinsonism; strokes among other neurology diseases require specialized care for control and management of symptoms, follow up and health education to the care giver and the patient</p>
+
+<h3><strong>TB Clinic</strong></h3>
+<p>TB is a disease which can affect all body organs except the hair and the nails. Once diagnosis has been done the clinic is mandated to do close monitoring and follow up of patients through the DOT system .Patients receive personalized education on treatment regime, medication side effects , nutrition and health education on lifestyle</p>
+
+<h3><strong>Neurosurgery Clinic</strong></h3>
+<p>This is a clinic which deals with diseases of the nervous system {involving the brain and the spinal cord} in children and adults .It is engaged with conservative, surgery and rehabilitation of patients with neurosurgical disorders. The clinic is run by a team of highly specialized neurosurgeons in the Country.</p>
+
+<h3><strong>Adult General Surgery</strong></h3>
+<p>This specialty cares for patients who require planned surgeries and subsequent follow up by the surgeons before and after surgery. The clinic runs every day of the week upon appointment</p>
+
+<h3><strong>Paediatric General Surgery</strong></h3>
+<p>This specialty cares for patients who require planned surgeries and subsequent follow up by the pediatric surgeons before and after surgery. Health education is part of the care given at the clinic</p>
+
+<h3><strong>Psychiatry Clinic</strong></h3>
+<p>The world has become a dynamic place with many psychosocial challenges. In this clinic the psychiatrist will address and explore the best options in resolving psychological issues both medically and through counseling</p>
+
+<h3><strong>Plastic Surgery</strong></h3>
+<p>This is an area of specialization which deals with reconstruction to near 100% functionality and deals with children and adults.Repair of traumatic injuries,burns,chronic wound care, hand surgeries, keloids and other cosmetic surgeries in both children and adults</p>
+
+<h3><strong>Wellness Clinics</strong></h3>
+<p>General checkup of our body functions is an area which is being embraced by the modern world. In the wellness clinic, both men and women are screened for the common diseases in men and women such cancers of the breast and prostate among other chronic illnesses</p>
+
+<h3><strong>Nephrology Clinic</strong></h3>
+<p>This is a specialty that takes care of patients with acute and chronic kidney diseases such as kidney failures. Close monitoring of kidney functions is done through laboratory testing. Health education on lifestyle modification and prevention of further kidney damage is given during scheduled clinic visits</p>
+
+<h3><strong>Urology</strong></h3>
+<p>This is a specialty which takes care of urinary system in men and women. Reproductive health disorders for men also addressed in this clinic. Specialized urologists will address any issues related to these systems.</p>
+
+<h3><strong>Oncology</strong></h3>
+<p>Cancer is a disease which all of us get scare of once diagnosis is made. Our highly specialized Oncologists are able to handle all types of cancers. It is in this clinic that cancer treatment planning is done and subsequent follow up after treatment has been completed</p>
+
+<h3><strong>HIV/AIDS Clinic (Total Care Centre)</strong></h3>
+<p>HIV/AIDS is prevalent. In this regard, this clinic provides for diagnoses, treatment follow up and health education on importance of drug adherence, lifestyle modification and nutritional counseling.</p>
+
+<h3><strong>Gastroenterology</strong></h3>
+<p>This is specialty which takes care of diseases of the digestive system. Screening for diseases such as stomach ulcers, peptic ulcers, colon diseases liver diseases such as Hepatitis and pancreatic abnormalities. Health education on disease prevention and management is also provided.</p>
+
+
+<p><strong>NB:</strong>View our<strong> Specialist Clinic Schedule</strong> for your planning. We are ready to serve you and your family.</p>
+</div>
+<H2><a href="#bar"><p align="right">GO UP</p></a></H2>
+
+<hr>
+<div class="con">
+    <footer>
+        <a href="pics/2.png"><img src="pics/2.png" width="150px" height="150px"></a>
+    </footer>
+    <footer>
+        <strong><h3>Quick Links</h3></strong>
+        <ul>
+            <li><a href="The Peoples Hospital.html">Home</a></li>
+            <li><div class="dropdown">
+                <button class="cta">Services</button>
+                <div class="dropdown-content">
+                    <strong><a href="healthservices.html">Inpatient</a></strong>
+                <strong><a href="outpatient.html">Outpatient</a></strong>
+                <strong><a href="#">Consultant Clinics</a></strong>
+                <strong><a href="cardiac.html">Cardiac Programs</a></strong>
+                <strong><a href="tele.html">Telemedicine</a></strong>
+                </div>
+            </div></a></li>
+            <li><a href="gal1.html">Gallery</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </footer>
+    <footer><strong><h3>Contact Us</h3></strong>
+    The People's Hospital<br>Jewel Complex, Roysambu<br>PO BOX 1212-00100, Nairobi,<br>Kenya<br>TEL: +254 735 143 953<br>+254 716 684 446<br>temdinguri1@gmail.com
+    </footer>
+<footer><strong><h3>Socials</h3></strong>
+<ul>
+    <li><a href="https://www.instagram.com/_pau.wan"><img src="pics/IG.png.png" width="20px" length="20px"> Instagram</a></li>
+    <li><a href="https://www.facebook.com/paul.wanjuki.3"><img src="pics/fb.png.png" width="20px" length="20px"> Facebook</a></li>
+    <li><a href="https://twitter.com/Temdinguri"><img src="pics/twitt.png.png" width="20px" length="20px"> Twitter</a></li>
+    <li><a href="https://wa.me/254716684446"><img src="pics/app.png.png" width="20px" length="20px"> Whatsapp</a></li>
+</ul></footer>
+</div>
+    <div class="foot">
+        <p>&copy 2024 The People's Hospital. All rights reserved</p>
+    </div>
+
+
+</body>
+</html>
