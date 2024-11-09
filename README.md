@@ -1,5 +1,40 @@
 # THE PEOPLES HOSPITAL DOCUMENTATION
 ### NOTE: This is the documentation of The Peoples Hospital management system and how to incorporate it into your desktop and run it.
+Here's a step-by-step guide on how to get this project from GitHub and run it on your desktop:
+### Prerequisites:
+**Git:** A version control system to clone the repository. You can download it from the official Git website.   
+**Required Tools:** Ensure you have the necessary tools (npm, Node.js, mysql, vs code.) to run the project, depending on its programming language.
+### Steps:
+**Find the Repository:**
+- Go to GitHub and search for the project you want.
+- Once you find it, navigate to the repository's main page.
+**Clone the Repository:**
+- Using the Command Line:
+- Open your terminal or command prompt.
+- Navigate to the directory where you want to clone the repository.
+Use the git clone command followed by the repository's URL:
+```bash
+git clone https://github.com/pauwan-github/Final_PLP_Project
+```
+**Using a Git Client:**
+Use a Git client like GitHub Desktop or SourceTree.   
+In the client, use the "Clone Repository" option and paste the repository's URL.
+**Navigate to the Project Directory:**
+- Open your terminal or command prompt.
+- Use the cd command to navigate to the cloned repository's directory:
+```bash
+cd Final_PLP_Project
+```
+**Install Dependencies (if necessary):**
+
+If the project has dependencies (mysql express bcryptjs express-validator express-session), you'll need to install them.
+By running the following code on your terminal
+```bash
+npm install mysql express bcryptjs express-validator express-session
+```
+**Run the Project:**
+Direct Execution: You might be able to directly execute the main file (e.g., node index.js for Node.js).
+
 ## 1.	Project Overview
 ### Introduction
 The hospital management system documented here provides all the people with services to health practices and professionals in the line of medicine. This Hospital Management System provides a streamlined way for hospitals to manage information. 
