@@ -29,10 +29,15 @@ IDE’s to install visit the links in brackets to install the software’s below
 After installing the above soft wares: Open your Visual studio code and press ctrl + back-tick (`) to open a terminal. Write the following codes.
 ```bash
 -	node –v # (to check if the node.js is installed and to check out its version)
+```
+
 ```bash
 -	npm –v # (to check if the npm is installed and to check out its version)
+```
+
 ```bash
 -	mysql –u root –p # (to open up mysql workbench and after confirming it’s working write exit on the terminal to close it)
+```
 Languages and Frameworks
 -	Frontend - HTML, CSS, JavaScript
 -	Backend - Node.js, Express.js
